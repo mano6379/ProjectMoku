@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2A4C0FD2040F9DF00C1D05F /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */; };
+		B2A4C0FE2040F9DF00C1D05F /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2A4C1012040FB1700C1D05F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4C1002040FB1700C1D05F /* OnboardingView.swift */; };
 		B2A62623203FA45200A4AB7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A62622203FA45200A4AB7B /* AppDelegate.swift */; };
 		B2A62625203FA45200A4AB7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A62624203FA45200A4AB7B /* ViewController.swift */; };
 		B2A62628203FA45200A4AB7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A62626203FA45200A4AB7B /* Main.storyboard */; };
@@ -14,7 +17,23 @@
 		B2A6262D203FA45200A4AB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6262B203FA45200A4AB7B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B2A4C0FF2040F9DF00C1D05F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2A4C0FE2040F9DF00C1D05F /* PaperOnboarding.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
+		B2A4C1002040FB1700C1D05F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B2A6261F203FA45200A4AB7B /* ProjectMoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A62622203FA45200A4AB7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2A62624203FA45200A4AB7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A4C0FD2040F9DF00C1D05F /* PaperOnboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 		B2A62616203FA45200A4AB7B = {
 			isa = PBXGroup;
 			children = (
+				B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */,
 				B2A62621203FA45200A4AB7B /* ProjectMoku */,
 				B2A62620203FA45200A4AB7B /* Products */,
 			);
@@ -58,6 +79,7 @@
 				B2A62624203FA45200A4AB7B /* ViewController.swift */,
 				B2A62626203FA45200A4AB7B /* Main.storyboard */,
 				B2A62629203FA45200A4AB7B /* Assets.xcassets */,
+				B2A4C1002040FB1700C1D05F /* OnboardingView.swift */,
 				B2A6262B203FA45200A4AB7B /* LaunchScreen.storyboard */,
 				B2A6262E203FA45200A4AB7B /* Info.plist */,
 			);
@@ -74,6 +96,7 @@
 				B2A6261B203FA45200A4AB7B /* Sources */,
 				B2A6261C203FA45200A4AB7B /* Frameworks */,
 				B2A6261D203FA45200A4AB7B /* Resources */,
+				B2A4C0FF2040F9DF00C1D05F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A4C1012040FB1700C1D05F /* OnboardingView.swift in Sources */,
 				B2A62625203FA45200A4AB7B /* ViewController.swift in Sources */,
 				B2A62623203FA45200A4AB7B /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +300,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKE9UY8PW2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProjectMoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MarionTest.ProjectMoku;
@@ -291,6 +319,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKE9UY8PW2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ProjectMoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MarionTest.ProjectMoku;
