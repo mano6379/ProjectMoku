@@ -42,7 +42,7 @@ class ViewController: UIViewController, PaperOnboardingDataSource, PaperOnboardi
         
         return onboardingViews[index]
     }
-    /*
+    
     func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {
         
     }
@@ -71,13 +71,23 @@ class ViewController: UIViewController, PaperOnboardingDataSource, PaperOnboardi
         
         let userDefaults = UserDefaults.standard
         
-        userDefaults.set(true, forKey: "onboardingComplete")
+        userDefaults.set(true, forKey:"onboardingComplete")
         userDefaults.synchronize()
     }
+    
+    
+    @IBAction func gotStarted(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(true,forKey:"onboardingComplete")
+        userDefaults.synchronize()
+        
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
 }
- */
+ 
 }
