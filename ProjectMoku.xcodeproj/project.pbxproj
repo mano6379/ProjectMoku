@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22D046620423D9E00684F7E /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D046520423D9E00684F7E /* HomeScreenVC.swift */; };
 		B2A4C0FD2040F9DF00C1D05F /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */; };
 		B2A4C0FE2040F9DF00C1D05F /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2A4C1012040FB1700C1D05F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4C1002040FB1700C1D05F /* OnboardingView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B22D046520423D9E00684F7E /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		B2A4C0FC2040F9DF00C1D05F /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
 		B2A4C1002040FB1700C1D05F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B2A6261F203FA45200A4AB7B /* ProjectMoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				B2A62622203FA45200A4AB7B /* AppDelegate.swift */,
 				B2A62624203FA45200A4AB7B /* ViewController.swift */,
 				B2A62626203FA45200A4AB7B /* Main.storyboard */,
+				B22D046520423D9E00684F7E /* HomeScreenVC.swift */,
 				B2A62629203FA45200A4AB7B /* Assets.xcassets */,
 				B2A4C1002040FB1700C1D05F /* OnboardingView.swift */,
 				B2A6262B203FA45200A4AB7B /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 				B2A4C1012040FB1700C1D05F /* OnboardingView.swift in Sources */,
 				B2A62625203FA45200A4AB7B /* ViewController.swift in Sources */,
 				B2A62623203FA45200A4AB7B /* AppDelegate.swift in Sources */,
+				B22D046620423D9E00684F7E /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
