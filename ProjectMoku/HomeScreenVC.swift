@@ -10,10 +10,10 @@ import UIKit
 
 class HomeScreenVC: UIViewController, UITableViewDataSource, UITabBarDelegate {
     @IBOutlet weak var tableView: UITableView!
-    var islandNames = ["Ni'hau", "Kauai", "Oahu", "Moloka'i", "Lāna'i", "Maui", "Hawaii (island)"]
+    var islandNames = ["Ni'hau", "Kauaʻi", "Oʻahu", "Moloka'i", "Lāna'i", "Maui", "Hawaiʻi Island"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Mokupuni"
         // Do any additional setup after loading the view.
     }
 
