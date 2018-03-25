@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="1546.875" y="-377.11267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Moku-->
         <scene sceneID="Etv-Nz-kzM">
             <objects>
-                <viewController id="wi4-6v-lij" sceneMemberID="viewController">
+                <viewController title="Moku" id="wi4-6v-lij" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZIP-0g-hTA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Wai-ʻanae"/>
                                 <connections>
-                                    <segue destination="mOW-J1-PYr" kind="show" id="Tlx-hL-ElF"/>
+                                    <segue destination="mOW-J1-PYr" kind="show" id="DzR-U9-2gX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -218,7 +218,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lrF-c8-kGj" kind="show" id="Fix-Om-dnu"/>
+                                            <segue destination="lrF-c8-kGj" kind="show" identifier="mySegue" id="OpN-8b-SwT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -231,23 +231,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BEd-hE-4hG"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="dlE-ye-oeh" id="wbb-Wk-wUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC5-OA-GK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2994.375" y="-377.11267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Sites DetailVC-->
         <scene sceneID="FmI-yl-f3i">
             <objects>
-                <viewController id="lrF-c8-kGj" sceneMemberID="viewController">
+                <viewController id="lrF-c8-kGj" customClass="sitesDetailVC" customModule="ProjectMoku" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f8e-kr-0tR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HnX-JV-6vk">
-                                <rect key="frame" x="16" y="83" width="288" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tuT-It-CxJ">
                                 <rect key="frame" x="40" y="373" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -256,10 +255,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkY-jz-YyQ">
+                                <rect key="frame" x="40" y="324" width="240" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HnX-JV-6vk">
+                                <rect key="frame" x="40" y="89" width="248" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dXN-cd-9BJ"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="tkY-jz-YyQ" id="w4X-aM-6Bk"/>
+                        <outlet property="textView" destination="tuT-It-CxJ" id="Au0-PP-zIF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jt-cx-Qdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

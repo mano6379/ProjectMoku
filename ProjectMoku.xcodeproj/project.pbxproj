@@ -18,6 +18,8 @@
 		B2A6262D203FA45200A4AB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6262B203FA45200A4AB7B /* LaunchScreen.storyboard */; };
 		B2C8B00B20670375000A3246 /* OahuDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C8B00A20670375000A3246 /* OahuDetailVC.swift */; };
 		B2C8B00D206706B8000A3246 /* SitesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C8B00C206706B8000A3246 /* SitesVC.swift */; };
+		B2C8B00F206715F0000A3246 /* sitesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C8B00E206715F0000A3246 /* sitesDetailVC.swift */; };
+		B2C8B01120671765000A3246 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2C8B01020671765000A3246 /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,8 @@
 		B2A6262E203FA45200A4AB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C8B00A20670375000A3246 /* OahuDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OahuDetailVC.swift; sourceTree = "<group>"; };
 		B2C8B00C206706B8000A3246 /* SitesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesVC.swift; sourceTree = "<group>"; };
+		B2C8B00E206715F0000A3246 /* sitesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sitesDetailVC.swift; sourceTree = "<group>"; };
+		B2C8B01020671765000A3246 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,9 @@
 				B2A62626203FA45200A4AB7B /* Main.storyboard */,
 				B2C8B00A20670375000A3246 /* OahuDetailVC.swift */,
 				B22D046520423D9E00684F7E /* HomeScreenVC.swift */,
+				B2C8B01020671765000A3246 /* Property List.plist */,
 				B2C8B00C206706B8000A3246 /* SitesVC.swift */,
+				B2C8B00E206715F0000A3246 /* sitesDetailVC.swift */,
 				B2A62629203FA45200A4AB7B /* Assets.xcassets */,
 				B2A4C1002040FB1700C1D05F /* OnboardingView.swift */,
 				B2A6262B203FA45200A4AB7B /* LaunchScreen.storyboard */,
@@ -157,6 +163,7 @@
 			files = (
 				B2A6262D203FA45200A4AB7B /* LaunchScreen.storyboard in Resources */,
 				B2A6262A203FA45200A4AB7B /* Assets.xcassets in Resources */,
+				B2C8B01120671765000A3246 /* Property List.plist in Resources */,
 				B2A62628203FA45200A4AB7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A4C1012040FB1700C1D05F /* OnboardingView.swift in Sources */,
+				B2C8B00F206715F0000A3246 /* sitesDetailVC.swift in Sources */,
 				B2C8B00D206706B8000A3246 /* SitesVC.swift in Sources */,
 				B2A62625203FA45200A4AB7B /* ViewController.swift in Sources */,
 				B2A62623203FA45200A4AB7B /* AppDelegate.swift in Sources */,
